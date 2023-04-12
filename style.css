@@ -1,0 +1,212 @@
+body{
+  background: linear-gradient(to right,rgb(7, 3, 57),rgb(39, 32, 125));
+  display: flex;
+  justify-content: center;
+}
+
+div {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#background1 {
+  background-image: url("gifs/fundo.gif");
+  width: 1500px;
+  height: 845px;
+}
+
+#background2 {
+  background-image: url("img/nao.jpg");
+  justify-items: center;
+}
+
+#background3 {
+  background-image: url("gifs/dominaromundo.gif");
+  margin-bottom: 10%;
+}
+
+#background4 {
+  background-color: #ffc918;
+}
+
+#cabecalho {
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+img {
+  width: 100%;
+}
+
+#cerebro {
+  margin-top: 25%;
+  margin-left: 50%;
+  width: 20%;
+}
+
+#pink {
+  margin-top: 20%;
+  margin-right: 58%;
+  width: 20%;
+}
+
+#menu {
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin-bottom: 25%;
+}
+
+#linkscomponents {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+@keyframes btn-pisca {
+  0% { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+.btn-pisca {
+background-color:#9e1a1a;
+color:#FFFFFF;
+border-radius: 4px; 
+-webkit-animation: btn-pisca 1s linear infinite;
+-moz-animation: btn-pisca 1s linear infinite;
+-ms-animation: btn-pisca 1s linear infinite;
+-o-animation: btn-pisca 1s linear infinite;
+animation: btn-pisca 1s linear infinite;
+background: linear-gradient(to top,#9e1a1a,rgb(236, 95, 59));  border: 1px solid #f1d42f;
+margin: 10%;
+padding: 5%;
+font-family: 'Comic Neue', cursive;
+text-align: center;
+color:#f8d2d2;
+text-decoration: none;
+font-size: 16px;
+box-shadow: 0 2px 16px 0 #ffc918, 0 6px 20px 0 rgba(220, 17, 17, 0.19);
+}
+
+embed{
+  height: 60px;
+  width: 144px;
+}
+
+#container {
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: start;
+  background-color: #f8d2d2;
+  margin-left: 3%;
+  margin-top: 10%;
+  margin-right: 60%;
+  margin-bottom: 10%;
+  border-radius: 10px;
+  padding: 10px;
+  gap:2%;
+}
+
+#objetivo{
+  grid-template-columns: 1fr;
+  margin-bottom: 20px;
+  justify-items: center;
+  align-items: start;
+}
+
+#slider{
+  position: fixed;
+  top: 50px;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  animation: anima 2s linear infinite;
+}
+
+#slider::after{
+  content:"";
+  left:100vw;
+  width: 100px;
+  height: 100px;
+}
+
+@keyframes anima{
+  from {right: 0}
+  to {right: 100%}
+}
+
+#personagens{
+  width: 40%;
+}
+
+.galeria{
+  grid-template-columns: 1fr 2fr 1fr;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  align-items: center;
+}
+
+#gpEsquerda {
+  transform: perspective(85em) rotateY(40deg);
+}
+
+#gpDireita {
+  transform: perspective(85em) rotateY(-40deg);
+}
+
+h1 {
+  font-family: 'Comic Neue', cursive;
+  font-size: 70px;
+  text-align: center;
+  color: #00009C; 
+  text-shadow: 2px 2px #9e1a1a;
+}
+
+h2 {
+  font-family: 'Comic Neue', cursive;
+  font-size: 40px;
+  text-align: center;
+  color: #ffc918; 
+  text-shadow: 2px 2px #9e1a1a;
+  border-radius: 10px;
+}
+
+h3 {
+  font-family: 'Delicious Handrawn', cursive;
+  font-size: 16px;
+  margin: 10%;
+  text-align: center;
+  color: #ffc918; 
+  background-color: #00009C;
+  border: 2px solid #222225;
+  border-radius: 10px;
+}
+
+p {
+	position: center;
+	color: #00009C; 
+  font-family:  'VT323', monospace;
+}
+
+#footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+#caixacinza{
+  grid-template-columns: 1fr 1fr;
+  background-color: #b2acac ;
+  width: 300px;
+  height: 200px;
+  border: 2px solid #222225;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20%;
+}
+
+button{
+  background-color: #787070;
+  border: 2px dashed #222225;
+  font-size: 14px;
+  margin: 10px;
+}
